@@ -8,7 +8,7 @@ body{
     display: flex;
     justify-content: center;
      margin-right: 20%;
-     /* vw means 20% of viewport width */
+     /* vw means 20% of viewport width*/
     margin-left: 20vw; 
     text-align: center;
     background-color:rgb(176, 22, 223);
@@ -20,6 +20,11 @@ body{
     padding-top: 10px;
     text-transform: uppercase;
 }
+.speed
+{
+    display: flex;
+    justify-content: center;   
+}
 .data-container
 {
     width: 600px;
@@ -30,7 +35,6 @@ body{
 
 .generate-btn
 {
-    margin-left: 30vw;
     margin-top: 30px;
     background-color: rgb(176, 22, 223);
     color: aliceblue;
@@ -45,7 +49,7 @@ body{
 }
 .bar
 {
-    width: 28px;
+    max-width: 28px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -79,4 +83,9 @@ body{
 }
 .sort-btn:hover{
     opacity: 0.8;
+} 
+.button-container
+{
+    display: flex;
+    justify-content: center;
 }

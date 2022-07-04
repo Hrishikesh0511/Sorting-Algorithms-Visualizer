@@ -1,7 +1,14 @@
 const container = document.querySelector(".data-container");
 const gnrtBtn = document.querySelector(".generate-btn");
 const sortBtns = document.querySelectorAll(".sort-btn");
-const delayTime = 300;
+var speed=document.querySelector(".slider");
+// defaultvalue
+let delayTime=400-speed.value;
+speed.oninput=function()
+{
+ delayTime = 400-this.value;
+// console.log(delayTime);
+ }
 //<--------------------------Event listeners------------------------------->
 gnrtBtn.addEventListener('click', generate);
 sortBtns.forEach(function (sortBtn) {
